@@ -1,0 +1,202 @@
+  ::-moz-selection {
+  background: #000;
+  color: #fff; }
+
+::selection {
+  background: #000;
+  color: #fff; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a:hover {
+    text-decoration: none; 
+  }
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+.text-style{
+  color:white;
+  font-size:30px;
+  margin-left: 175%;
+}
+@media screen and (max-width: 768px){
+  .text-style{
+    font-size:18px;
+  }
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.container-style{
+    width: 100%;
+display: grid;
+grid-template-columns:0.1fr 1fr 1.5fr 2fr;
+grid-template-rows: 120px;
+justify-content: center;
+align-items: center;
+z-index: 100;
+background:#186c70;
+position: fixed;
+  }
+  .navbar-list{
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar-list{
+    list-style: none;
+  }
+  .navbar-list a{
+    color:white;
+    text-decoration: none;
+    outline:none;
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 1.3px;
+    padding-right:30px;
+  }
+  .tagline .tagline-style{
+    display: block;
+    font-weight: bolder;
+    font-size: 19px;
+    line-height: 1.2;
+    letter-spacing: 1.1px;
+    color:white;
+    word-spacing: 1.3px;
+  }
+  .tagline .tagline-base{
+    color:white;
+    display: block;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    word-spacing: 1.2px;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+body {
+  margin: 0;
+  padding:0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  overflow-x:hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width:768px){
+  nav{
+    position:relative;
+    right:5%;
+  }
+  .navbar-list{
+    overflow-x: hidden;
+    position: fixed;
+   background:maroon;
+    background-size: cover;
+    height: 90vh;
+    width:112%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path:circle(100px at 90% -20%);
+    transition : all 1s ease-out;
+    z-index:2;
+  }
+  .tagline{
+    margin-left: 60px;
+  }
+  .tagline-style, .tagline-base{
+    font-size:1em;
+    font-weight: normal;
+  }
+  .container-style{
+    width:112%;
+    position: initial;
+  }
+  .contact-style{
+    padding-right: 0;
+  }
+  .brand{
+    position: relative;
+    margin-left: 30%;
+  }
+}
+.navbar-list a {
+    position: relative;
+    z-index: 50;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden
+}
+.navbar-list a {
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s  ease;
+    -ms-transition: color 1s ease;
+    -o-transition: color 1s ease;
+    cursor: pointer
+}
+.navbar-list a {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: color 1s ease
+}
+.team-area{
+    padding-top: 15%;
+}
+.single-team{
+    background-color: #90AFC5;
+    margin-bottom: 10px;
+}
+.img-area{
+    overflow: hidden;
+    position: relative;
+}
+.img-area img{
+    width: 100%;
+}
+.img-area img{
+    transition: all 0.4s ease 0s;
+}
+@media (max-width: 768px){
+    .img-area img{
+        display: inline-block;
+    }
+}
+.img-text{
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    z-index:1000;
+}
+.img-text h4{
+    margin: 0 0 5px;
+    font-size: 25px;
+    font-family: bignoodletitling;
+    letter-spacing: 3px;
+    z-index:1000;
+}
+.img-text h5{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    z-index:1000;
+}
+.team_text{
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size:40px;
+  color:#0a1345;
+  text-align:center;
+  padding:0 0 4% 0;
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
